@@ -1,0 +1,217 @@
+%-------------------------
+% Resume in Latex
+% Author : Abubakr Elmallah
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc} % UTF-8 source support (harmless under XeTeX/Tectonic)
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[colorlinks=true, linkcolor=black, urlcolor=blue]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+% glyphtounicode is a pdfTeX feature; guard it so the file also builds with XeTeX/Tectonic
+\ifdefined\pdfgentounicode
+  \input{glyphtounicode}
+\fi
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated pdf is machine readable/ATS parsable (pdfTeX only)
+\ifdefined\pdfgentounicode
+  \pdfgentounicode=1
+\fi
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-1pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Abubakr Elmallah} \\ \vspace{3pt}
+    
+    \small \href{https://abubakrelmallah.com}{abubakrelmallah.com} $|$ \href{mailto:ammelmallah@icloud.com}{ammelmallah@icloud.com} $|$ (949) 208-4927
+     \\ \vspace{3pt}
+    
+    \href{https://www.linkedin.com/in/abubakr-elmallah/}{linkedin.com/abubakr} $|$ 
+    \href{https://github.com/TheAbubakrAbu}{github.com/abubakr}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of California, Irvine}{Irvine, CA}
+      {Bachelor of Science -- Computer Science (3.90 GPA)}{2024 -- 2027}
+      
+  \resumeSubHeadingListEnd
+
+
+%-----------WORK EXPERIENCE-----------
+\section{Work Experience}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {iOS App Developer}{March 2025 -- Present}
+      {UCI Student Center \textemdash\ %
+       \href{https://studentcenter.uci.edu/home/download-the-apps/}{studentcenter.uci.edu}}{Irvine, CA}
+      \resumeItemListStart
+        \resumeItem{Updated \href{https://apps.apple.com/us/app/uci-now/id1382415698}{UCI Now} and \href{https://apps.apple.com/us/app/zotfinder/id915256719}{ZOTFinder} in UIKit with bug fixes, performance boosts, and features via \textbf{CocoaPods}.}
+        \resumeItem{Integrated 20+ libraries like \textbf{Alamofire}, \textbf{SwiftyJSON}, \textbf{GoogleMaps}, and \textbf{Firebase} to expand functionality.}
+        \resumeItem{Rebuilt both apps in \textbf{SwiftUI}, modernizing UI and cutting load times by \textbf{40\%} with async networking.}
+        \resumeItem{Reduced ZOTFinder crashes by \textbf{85\%} (from 10.4K to under 1.5K/month) after full code refactor.}
+        \resumeItem{Hit \textbf{87.8K installs / 3.19M sessions} on ZOTFinder and \textbf{15.4K / 39.2K} on UCI Now after SwiftUI remaster.}
+    \resumeItemListEnd
+      
+    \resumeSubheading
+      {iOS App Development Teacher}{February 2024 -- February 2026}
+      {STEM Heroes Academy \textemdash\ \href{https://www.stemirvine.com/}{stemirvine.com}}{Irvine, CA}
+      \resumeItemListStart
+        \resumeItem{Launched and taught a new \textbf{iOS App Development} course using \textbf{Swift}, \textbf{Swift Playgrounds}, and \textbf{SwiftUI}, enabling 30+ students (ages 8--14) to build functional iOS apps with interactive UIs and animations.}
+        \resumeItem{Taught 15+ custom lessons on \textbf{Swift}, guiding students through UI design and animation projects.}
+        \resumeItem{Boosted student engagement and retention by \textbf{40\%} through hands-on projects, live demos, and feedback loops.}
+        \resumeItem{Became STEM Academy's \textbf{youngest instructor} at 17, contributing to course expansion and enrollment growth.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {UCI Clubs \& Technical Leadership}{Sep 2024 -- Present}
+      {Muslim Tech Collaborative (MTC) \& ICS Student Council (ICSSC)}{Irvine, CA}
+      \resumeItemListStart
+        \resumeItem{Co-founded UCI's \textbf{Muslim Tech Collaborative (MTC)} and serve as \textbf{Vice President \& Director of Projects and Workshops}, building a student-run tech organization delivering real-world software and mentorship.}
+        \resumeItem{Launched \textbf{Ignite Consulting} and led student-facing projects including \textbf{UniConn} and \textbf{Ripplet}, guiding project scoping, architecture decisions, workshops, and peer mentorship from idea to delivery.}
+        \resumeItem{Serve on \textbf{ICS Student Council (ICSSC)} as lead developer for \textbf{PeterPlate}, a campus dining platform used by students to plan meals using menu, allergen, rating, and event data.}
+        \resumeItem{Developed a \textbf{full-stack web platform} for PeterPlate using \textbf{TypeScript} and \textbf{Next.js (React)}, with state management (\textbf{Zustand}), UI frameworks (\textbf{Tailwind}, \textbf{shadcn/ui}), and containerized workflows using \textbf{Docker}.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING PROJECTS-----------
+\section{Programming Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\href{https://apps.apple.com/us/app/datapad-aurebesh-translator/id6450498054?platform=iphone}{\textbf{Aurebesh Translator App Suite}} $|$ \emph{iOS \hspace{0.75em} \textit{\textbf{Top 10 on App Store Entertainment Chart}}}}{\href{https://github.com/theabubakrabu/aurebesh-translator}{\emph{GitHub}} $|$ 2023}
+        \resumeItemListStart
+            \resumeItem{Built and published my first and most ambitious iOS app using \textbf{SwiftUI}, translating English to Aurebesh, Mando'a, Sith Script, and Outer Rim Basic, with offline support, smooth animations, and a fully custom UI.}
+          \resumeItem{Earned \textbf{\$1K+} from \textbf{25K+ installs}, powering \textbf{60K+ user sessions} of Star Wars translation.}
+          \resumeItem{Built a modular \textbf{translation engine} and \textbf{alphabet viewer} using state-driven UI for responsiveness.}
+          \resumeItem{Shipped an \textbf{Aurebesh keyboard}, \textbf{WidgetKit} widgets, and Apple Watch support via \textbf{WatchConnectivity}.}
+          \resumeItem{Released a free version, \href{https://apps.apple.com/us/app/aurebesh-translator/id6670201513?platform=iphone}{Aurebesh Translator}, reaching 6,000+ users and achieving a \textbf{99.9\% crash-free rate}.}
+    \resumeItemListEnd
+          
+    \resumeProjectHeading
+    {\href{https://apps.apple.com/us/app/al-islam-islamic-pillars/id6449729655?platform=iphone}{\textbf{Al-Islam App Suite}} $|$ \emph{iOS}}{\href{https://github.com/theabubakrabu/al-islam-islamic-pillars}{\emph{GitHub}} $|$ 2023}
+    \resumeItemListStart
+        \resumeItem{Built \textbf{three full-featured SwiftUI apps} --- \href{https://apps.apple.com/us/app/al-islam-islamic-pillars/id6449729655?platform=iphone}{Al-Islam}, \href{https://apps.apple.com/us/app/al-quran-beginner-quran/id6474894373?platform=iphone}{Al-Quran}, and \href{https://apps.apple.com/us/app/al-adhan-prayer-times/id6475015493?platform=iphone}{Al-Adhan} --- with dynamic verse loading, widgets, Qibla compass, and prayer notifications, reaching \textbf{15,000+ users} and \textbf{55,000+ sessions}.}
+        \resumeItem{Implemented \textbf{JSON parsing} for Arabic/English Quran data with offline caching, reducing load time by \textbf{50\%}.}
+        \resumeItem{Created \textbf{Beginner Arabic Mode}, \textbf{Traveling Mode}, and online chapter/verse playback with multiple reciters.}
+        \resumeItem{Hit \textbf{99.8\% crash-free rate}; won \textbf{Congressional App Challenge 2023} and \textbf{Swift Student Challenge 2024}.}
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\href{https://apps.apple.com/us/app/islamic-center-of-irvine/id6463835936?platform=iphone}{\textbf{Islamic Center of Irvine (ICOI)}} $|$ \emph{iOS}}{\href{https://github.com/TheAbubakrAbu/Islamic-Center-of-Irvine}{\emph{GitHub}} $|$ 2024}
+    \resumeItemListStart
+      \resumeItem{Developed the official ICOI app in \textbf{SwiftUI}, with real-time prayer times, mosque events, verified announcements, and business directories in a mobile-first design---streamlining access to key services and boosting engagement.}
+      \resumeItem{Integrated \textbf{SwiftSoup} for dynamic web scraping and used background tasks for efficient daily data sync.}
+      \resumeItem{Engineered a full-stack platform with \textbf{mosque prayer alerts}, Islamic tools, and a searchable Muslim business directory using \textbf{App Groups}, shared storage, and modular SwiftUI components to boost daily engagement.}
+      \resumeItem{Reached \textbf{2K+ downloads} with over \textbf{35K+ sessions}, transforming community outreach and mobile engagement.}
+    \resumeItemListEnd
+    
+    \resumeProjectHeading
+      {\textbf{Star Wars Discord Bots} $|$ \emph{Python, C++}}{2024, 2025}
+        \resumeItemListStart
+        \resumeItem{Developed \href{https://discord.ly/sabaac-droid}{\textbf{Sabacc Droid}} (Python) and \href{https://discord.ly/aurebesh-droid}{\textbf{Aurebesh Droid}} (C++), growing usage to \textbf{500+ Discord servers} by delivering immersive Star Wars games and language tools with slash commands, buttons, and rich embeds.}
+        \resumeItem{Used \textbf{discord.py} and \textbf{D++} to build modular bot frameworks with reusable commands and event-driven logic.}
+        \resumeItem{Achieved 99.9\% uptime by deploying to \textbf{Heroku} and automating \textbf{GitHub Actions} builds for seamless updates.}
+    \resumeItemListEnd
+    
+\resumeSubHeadingListEnd
+
+%-----------SUMMARY & SKILLS-----------
+%\section{Summary \& Skills}
+%\small{Aspiring software engineer specializing in iOS development (SwiftUI) with strong experience in \textbf{Swift}, \textbf{Python}, \textbf{C++}, \textbf{Java}, \textbf{JavaScript}, and Bash across macOS and Windows. Currently an iOS Developer at UCI and iOS App Development Teacher at STEM Academy. Winner of the \textbf{Congressional App Challenge 2023} and \textbf{Swift Student Challenge 2024}.}
+
+%-------------------------------------------
+\end{document}

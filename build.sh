@@ -1,19 +1,29 @@
 #!/usr/bin/env bash
-# Build resume.tex into resume.pdf.
-# Usage: ./build.sh        (compile once)
-#        ./build.sh clean  (remove build artifacts)
+# Build a resume .tex into its .pdf.
+# Usage: ./build.sh          (build resume.tex)
+#        ./build.sh ios      (build resume-ios.tex, the iOS / mobile variant)
+#        ./build.sh clean    (remove build artifacts)
 
 set -euo pipefail
 cd "$(dirname "$0")"
 
-SRC="resume.tex"
-OUT="resume.pdf"
-
 if [[ "${1:-}" == "clean" ]]; then
-  rm -f resume.aux resume.log resume.out resume.fls resume.fdb_latexmk
+  rm -f ./*.aux ./*.log ./*.out ./*.fls ./*.fdb_latexmk
   echo "Cleaned build artifacts."
   exit 0
 fi
+
+# No argument builds the base resume; otherwise build resume-<name>.tex.
+if [[ -z "${1:-}" ]]; then
+  SRC="resume.tex"
+else
+  SRC="resume-${1}.tex"
+  if [[ ! -f "$SRC" ]]; then
+    echo "No such resume variant: $SRC" >&2
+    exit 1
+  fi
+fi
+OUT="${SRC%.tex}.pdf"
 
 # Pick whatever LaTeX compiler is available.
 if command -v latexmk >/dev/null 2>&1; then
@@ -21,7 +31,7 @@ if command -v latexmk >/dev/null 2>&1; then
   latexmk -c "$SRC" >/dev/null 2>&1 || true   # tidy aux files, keep the PDF
 elif command -v pdflatex >/dev/null 2>&1; then
   pdflatex -interaction=nonstopmode -halt-on-error "$SRC"
-  rm -f resume.aux resume.log resume.out
+  rm -f "${SRC%.tex}.aux" "${SRC%.tex}.log" "${SRC%.tex}.out"
 elif command -v tectonic >/dev/null 2>&1; then
   tectonic "$SRC"
 else

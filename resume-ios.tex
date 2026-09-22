@@ -1,5 +1,6 @@
 %==============================================================================
 %  Résumé — Abubakr Elmallah
+%  Variant: iOS / Mobile Engineering intern
 %
 %  Build:  ./build.sh          (Tectonic / XeTeX)   or   pdflatex resume.tex
 %  Based on Jake Gutierrez's open-source LaTeX resume template.
@@ -140,24 +141,23 @@
 \resumeSubHeadingListStart
 
   \resumeSubheading
+    {Lead iOS Developer}{March 2025 -- Present}
+    {UCI Student Center \& Event Services $|$ \href{https://studentcenter.uci.edu/home/download-the-apps/}{studentcenter.uci.edu}}{Irvine, CA}
+    \resumeItemListStart
+      \resumeItem{Own and ship three App Store apps: \textbf{100K+ installs}, \textbf{3.2M+ sessions} (\href{https://apps.apple.com/us/app/uci-now/id1382415698}{\textbf{UCI Now}}, \href{https://apps.apple.com/us/app/zotfinder/id915256719}{\textbf{ZOTFinder}}, \href{https://apps.apple.com/us/app/uci-esports/id6751213697}{\textbf{Esports}}).}
+      \resumeItem{Shipped \textbf{UCI Esports} as \textbf{sole iOS developer}: a \textbf{15K-line SwiftUI} app with \textbf{single sign-on}, live \textbf{REST} reservations, and a \textbf{Node.js} backend I wrote.}
+      \resumeItem{Lead a \textbf{4+ person Android team}, running hiring, technical interviews, and code review.}
+      \resumeItem{Own the \textbf{AWS} infrastructure and backends behind the department's apps, and ship all releases through \textbf{App Store Connect} and \textbf{TestFlight}.}
+      \resumeItem{Cut load times \textbf{40\%} rebuilding two \textbf{UIKit} apps into \textbf{SwiftUI} with async/await \textbf{structured concurrency}, extending both to \textbf{iPad}, \textbf{Mac}, and \textbf{Vision Pro}.}
+      \resumeItem{Cut crashes \textbf{85\%} (10.4K to under 1.5K/month) refactoring a decade-old \textbf{UIKit} codebase with \textbf{20+ CocoaPods} dependencies (\textbf{Google Maps}, \textbf{Firebase}).}
+    \resumeItemListEnd
+
+  \resumeSubheading
     {Lead Software Developer}{February 2026 -- Present}
     {ICS Student Council (ICSSC) $|$ \href{https://studentcouncil.ics.uci.edu/}{studentcouncil.ics.uci.edu}}{Irvine, CA}
     \resumeItemListStart
       \resumeItem{Lead a \textbf{12-person engineering team} building \textbf{PeterPlate}, ICSSC's open-source campus dining platform, \textbf{live in production} on web and iOS, serving menu, allergen, nutrition, and ratings data.}
-      \resumeItem{Built a type-safe frontend with \textbf{Next.js (React)}, \textbf{TypeScript}, \textbf{Zustand}, \textbf{Tailwind CSS}, and \textbf{shadcn/ui}.}
-      \resumeItem{Shipped a \textbf{scalable} serverless backend by pairing \textbf{tRPC} with \textbf{Drizzle ORM} on a 13-table \textbf{PostgreSQL} schema, deployed to \textbf{AWS Lambda} and \textbf{RDS} via \textbf{GitHub Actions} CI/CD with \textbf{Docker} + \textbf{Testcontainers} tests.}
-    \resumeItemListEnd
-
-  \resumeSubheading
-    {Lead Mobile \& Backend Developer}{March 2025 -- Present}
-    {UCI Student Center \& Event Services $|$ \href{https://studentcenter.uci.edu/home/download-the-apps/}{studentcenter.uci.edu}}{Irvine, CA}
-    \resumeItemListStart
-      \resumeItem{Own and ship three App Store apps: \textbf{100K+ installs}, \textbf{3.2M+ sessions} (\href{https://apps.apple.com/us/app/uci-now/id1382415698}{\textbf{UCI Now}}, \href{https://apps.apple.com/us/app/zotfinder/id915256719}{\textbf{ZOTFinder}}, \href{https://apps.apple.com/us/app/uci-esports/id6751213697}{\textbf{Esports}}).}
-      \resumeItem{Shipped \textbf{UCI Esports} solo: \textbf{15K-line SwiftUI} client plus a \textbf{Node.js} backend on \textbf{AWS Lambda}/\textbf{DynamoDB} with role-based staff auth.}
-      \resumeItem{Lead a \textbf{4+ person Android team}, running hiring, technical interviews, and code review.}
-      \resumeItem{Own the \textbf{AWS} infrastructure and \textbf{Python} backends behind the department's apps.}
-      \resumeItem{Cut load times \textbf{40\%} rebuilding two apps from \textbf{UIKit} to \textbf{SwiftUI}, extending both to \textbf{Mac} and \textbf{Vision Pro}.}
-      \resumeItem{Cut crashes \textbf{85\%} (10.4K to under 1.5K/month) refactoring a decade-old codebase with \textbf{20+ dependencies}.}
+      \resumeItem{Built a type-safe \textbf{Next.js (React)} + \textbf{TypeScript} frontend and a serverless \textbf{tRPC}/\textbf{PostgreSQL} backend on \textbf{AWS}, shipped via \textbf{GitHub Actions} CI/CD.}
     \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -167,10 +167,10 @@
 \resumeSubHeadingListStart
 
   \resumeProjectHeading
-    {\href{https://abubakrelmallah.com/star-wars/}{\textbf{Star Wars Discord Bots}} $|$ \emph{Python, C++20, Linux \hspace{0.75em} \textit{\textbf{500+ Servers}}}}{\href{https://github.com/TheAbubakrAbu/Sabacc-Droid}{\textbf{\emph{GitHub}}} $|$ 2024 -- 2025}
+    {\href{https://abubakrelmallah.com/al-islam/}{\textbf{Al-Islam App Suite}} $|$ \emph{SwiftUI, Kotlin \hspace{0.75em} \textit{\textbf{Congressional \& Swift Student Challenge Winner}}}}{\href{https://github.com/TheAbubakrAbu/Al-Islam-iOS}{\textbf{\emph{GitHub}}} $|$ 2023}
     \resumeItemListStart
-      \resumeItem{Grew \href{https://discord.ly/sabaac-droid}{\textbf{Sabacc Droid}} (\textbf{Python}, \textbf{discord.py}, 5K+ lines) and \href{https://discord.ly/aurebesh-droid}{\textbf{Aurebesh Droid}} (\textbf{C++20}, \textbf{D++}, \textbf{CMake}) to \textbf{500+ Discord servers} with an event-driven, concurrent 8-player engine spanning 4 rule variants.}
-      \resumeItem{Sustained \textbf{99.9\% uptime} on \textbf{Linux} with a \textbf{GitHub Actions} pipeline that builds and cuts a release on every push.}
+      \resumeItem{Built \textbf{three open-source apps} (\href{https://apps.apple.com/us/app/al-islam-islamic-pillars/id6449729655?platform=iphone}{\textbf{Al-Islam}}, \href{https://apps.apple.com/us/app/al-quran-beginner-quran/id6474894373?platform=iphone}{\textbf{Al-Quran}}, \href{https://apps.apple.com/us/app/al-adhan-prayer-times/id6475015493?platform=iphone}{\textbf{Al-Adhan}}) for iPhone, iPad, Mac, and Watch, serving \textbf{15K+ users} across \textbf{55K+ sessions} at \textbf{99.8\% crash-free}.}
+      \resumeItem{Cut load times \textbf{50\%} with offline \textbf{JSON} parsing, \textbf{SwiftSoup} scraping, and on-device caching, and maintain all three from one shared codebase with a \textbf{3-way-merge} sync tool that ports changes between them.}
     \resumeItemListEnd
 
   \resumeProjectHeading
@@ -182,10 +182,9 @@
     \resumeItemListEnd
 
   \resumeProjectHeading
-    {\href{https://abubakrelmallah.com/al-islam/}{\textbf{Al-Islam App Suite}} $|$ \emph{SwiftUI, Kotlin \hspace{0.75em} \textit{\textbf{Congressional \& Swift Student Challenge Winner}}}}{\href{https://github.com/TheAbubakrAbu/Al-Islam-iOS}{\textbf{\emph{GitHub}}} $|$ 2023}
+    {\href{https://abubakrelmallah.com/star-wars/}{\textbf{Star Wars Discord Bots}} $|$ \emph{Python, C++20, Linux \hspace{0.75em} \textit{\textbf{500+ Servers}}}}{\href{https://github.com/TheAbubakrAbu/Sabacc-Droid}{\textbf{\emph{GitHub}}} $|$ 2024 -- 2025}
     \resumeItemListStart
-      \resumeItem{Built \textbf{three open-source apps} (\href{https://apps.apple.com/us/app/al-islam-islamic-pillars/id6449729655?platform=iphone}{\textbf{Al-Islam}}, \href{https://apps.apple.com/us/app/al-quran-beginner-quran/id6474894373?platform=iphone}{\textbf{Al-Quran}}, \href{https://apps.apple.com/us/app/al-adhan-prayer-times/id6475015493?platform=iphone}{\textbf{Al-Adhan}}) for iPhone, iPad, Mac, and Watch, serving \textbf{15K+ users} across \textbf{55K+ sessions} at \textbf{99.8\% crash-free}.}
-      \resumeItem{Cut load times \textbf{50\%} with offline \textbf{JSON} parsing, \textbf{SwiftSoup} scraping, and on-device caching, and maintain all three from one shared codebase with a \textbf{3-way-merge} sync tool that ports changes between them.}
+      \resumeItem{Grew \href{https://discord.ly/sabaac-droid}{\textbf{Sabacc Droid}} (\textbf{Python}) and \href{https://discord.ly/aurebesh-droid}{\textbf{Aurebesh Droid}} (\textbf{C++20}, \textbf{CMake}) to \textbf{500+ servers} with a concurrent 8-player engine, at \textbf{99.9\% uptime} on \textbf{Linux}.}
     \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -194,9 +193,9 @@
 \section{Languages \& Technologies}
 \begin{itemize}[leftmargin=0.15in, label={}]
   \small{\item{
-    \textbf{Languages:} TypeScript, JavaScript, Python, SQL, Java, C++ (C++20), Swift, Kotlin, Bash \\
-    \textbf{Frameworks:} React, Next.js, Node.js, tRPC, REST APIs, Drizzle ORM, Tailwind CSS, SwiftUI, UIKit \\
-    \textbf{Tools:} AWS (Lambda, RDS, DynamoDB), Docker, PostgreSQL, Git, GitHub Actions (CI/CD), Linux, Testcontainers, Agile/Scrum
+    \textbf{Languages:} Swift, Objective-C (reading), Kotlin, TypeScript, Python, C++ (C++20), SQL, Bash \\
+    \textbf{Apple Frameworks:} SwiftUI, UIKit, WidgetKit, StoreKit, WatchConnectivity, MapKit, CoreLocation, AVFoundation, Combine, Swift Concurrency \\
+    \textbf{Tools:} Xcode, App Store Connect, TestFlight, Instruments, CocoaPods, Swift Package Manager, Git, GitHub Actions (CI/CD), Firebase, AWS
   }}
 \end{itemize}
 

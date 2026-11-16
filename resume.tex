@@ -117,10 +117,20 @@
 \begin{center}
   \textbf{\Huge \scshape Abubakr Elmallah} \\ \vspace{3pt}
 
-  \footnotesize (949) 208-4927 $|$ \href{mailto:ammelmallah@icloud.com}{ammelmallah@icloud.com} $|$ \href{https://abubakrelmallah.com}{abubakrelmallah.com} $|$
+  % 8.6pt instead of \footnotesize (9pt) so the contact line stays on one line.
+  \fontsize{8.6}{11}\selectfont (949) 208-4927 $|$ \href{mailto:contact@abubakrelmallah.com}{contact@abubakrelmallah.com} $|$ \href{https://abubakrelmallah.com}{abubakrelmallah.com} $|$
   \href{https://www.linkedin.com/in/abubakr-elmallah/}{linkedin.com/in/abubakr-elmallah} $|$
   \href{https://github.com/TheAbubakrAbu}{github.com/TheAbubakrAbu}
 \end{center}
+
+% ================================================================ The bench ==
+%  Every block marked [bench] below is commented out on purpose: it is on
+%  abubakrelmallah.com (and goes on LinkedIn) but the one page has no room
+%  for it. The source keeps the whole record; the PDF stays exactly as it is.
+%  To use one, delete the leading "% " from each of its lines. They follow
+%  the same rules as the live bullets: action verb, a number, the keyword
+%  (accomplished X, measured by Y, by doing Z), three bullets a role at most.
+% ============================================================================
 
 % ----------------------------------------------------------------- Education --
 \section{Education}
@@ -132,7 +142,29 @@
       \resumeItem{\textbf{Awards:} Apple Swift Student Challenge Winner (1 of 350 worldwide), Congressional App Challenge Winner}
       \resumeItem{\textbf{Teaching:} Launched \href{https://www.stemirvine.com/}{STEM Heroes Academy}'s first App Development course as its \textbf{youngest instructor} at 17, teaching 30+ students (2024--2026)}
       \resumeItem{\textbf{Relevant Coursework:} Data Structures \& Algorithms, Software Engineering, Data Management (SQL), Artificial Intelligence, Information Retrieval, Object-Oriented Programming, Discrete Mathematics}
+      % [bench] more for this entry, from /college/:
+      % \resumeItem{\textbf{Leadership:} Co-Founder \& Vice President, Muslim Tech Collaborative; Dawah Coordinator, Muslim Student Union}
+      % \resumeItem{\textbf{Relevant Coursework:} Data Structures \& Algorithms, Software Engineering, Data Management (SQL), Artificial Intelligence, Information Retrieval, Object-Oriented Programming, Computer Organization, C/C++, Discrete Mathematics, Linear Algebra, Probability \& Statistics}
     \resumeItemListEnd
+
+  % [bench] high school, from /high-school/:
+  % \resumeSubheading
+  %   {Trabuco Hills High School}{Mission Viejo, CA}
+  %   {IB Diploma, top 3 of 644 (3.98 unweighted, 5.13 weighted GPA)}{May 2024}
+  %   \resumeItemListStart
+  %     \resumeItem{\textbf{Awards:} AP Scholar with Distinction (six 5s and three 4s), Career Technical Education Award in computer science, First Place on the Orange County ACS first-year chemistry exam, OC Register Valedictorians \& Top Scholars (2024)}
+  %     \resumeItem{\textbf{Leadership:} President, Muslim Student Association (11th--12th grade); Co-President, CyberPatriot; Director of STEM Workshops, STEM Extreme; board member, ICOI Technology Committee}
+  %     \resumeItem{\textbf{Saddleback College (dual enrollment):} iPhone/iPad Programming, Python Programming, Java Programming, Arabic 1--3, History of the Middle East}
+  %   \resumeItemListEnd
+  %
+  % [bench] STEM Extreme, from /high-school/ and the 2021--22 flyers:
+  % \resumeSubheading
+  %   {Director of STEM Workshops}{2021 -- 2022}
+  %   {STEM Extreme, Trabuco Hills High School}{Mission Viejo, CA}
+  %   \resumeItemListStart
+  %     \resumeItem{Created and led coding workshops for 1st to 6th graders, in person and over Zoom, including Minecraft and Star Wars on \textbf{Code.org} and \textbf{CodeCombat}.}
+  %     \resumeItem{Led the club's other tutors, reached out to partner organizations, and designed the poster for every workshop.}
+  %   \resumeItemListEnd
 \resumeSubHeadingListEnd
 
 % ----------------------------------------------------------- Work Experience --
@@ -142,6 +174,8 @@
   \resumeSubheading
     {Lead Software Developer}{February 2026 -- Present}
     {ICS Student Council (ICSSC) $|$ \href{https://studentcouncil.ics.uci.edu/}{studentcouncil.ics.uci.edu}}{Irvine, CA}
+    % [bench] the promotion, as /college/ shows it (joined November 2025, led from February 2026):
+    % \resumeSubSubheading{Developer}{November 2025 -- February 2026}
     \resumeItemListStart
       \resumeItem{Lead a \textbf{12-person engineering team} building \textbf{PeterPlate}, ICSSC's open-source campus dining platform, \textbf{live in production} on web and iOS, serving menu, allergen, nutrition, and ratings data.}
       \resumeItem{Built a type-safe frontend with \textbf{Next.js (React)}, \textbf{TypeScript}, \textbf{Zustand}, \textbf{Tailwind CSS}, and \textbf{shadcn/ui}.}
@@ -158,23 +192,68 @@
       \resumeItem{Own the \textbf{AWS} infrastructure and \textbf{Python} backends behind the department's apps.}
       \resumeItem{Cut load times \textbf{40\%} rebuilding two apps from \textbf{UIKit} to \textbf{SwiftUI}, extending both to \textbf{Mac} and \textbf{Vision Pro}.}
       \resumeItem{Cut crashes \textbf{85\%} (10.4K to under 1.5K/month) refactoring a decade-old codebase with \textbf{20+ dependencies}.}
+      % [bench] more from this role (resume-ios.tex, /college/, the app cards):
+      % \resumeItem{Built \textbf{UCI Esports} from the first line in \textbf{~15.4K lines of SwiftUI} for iPhone, iPad, and Mac, with \textbf{UCInetID} sign-in, live PC availability, and a backend under \textbf{85 tests}.}
+      % \resumeItem{Stabilized \textbf{SCES Real-Time Ops}, the internal app 12 staff workflows run on, by fixing \textbf{45 bugs} in one sweep and shipping every release from 2.7.4 to 2.8.2.}
+      % \resumeItem{Ship every release through \textbf{App Store Connect} and \textbf{TestFlight} across \textbf{20+ CocoaPods} dependencies (\textbf{Google Maps}, \textbf{Firebase}), on \textbf{async/await} structured concurrency.}
     \resumeItemListEnd
 
+  % [bench] STEM Heroes as its own entry (resume-teaching.tex leads with it):
+  % \resumeSubheading
+  %   {iOS App Development Teacher}{February 2024 -- February 2026}
+  %   {STEM Heroes Academy $|$ \href{https://www.stemirvine.com/}{stemirvine.com}}{Irvine, CA}
+  %   \resumeItemListStart
+  %     \resumeItem{Launched the academy's first \textbf{iOS App Development} course as its \textbf{youngest instructor} at 17, teaching \textbf{Swift} and \textbf{SwiftUI} to \textbf{30+ students} (ages 8--14) who each shipped a working app, and taught \textbf{Python} as well.}
+  %     \resumeItem{Designed the curriculum from scratch, from Swift syntax and optionals to SwiftUI layout, gestures, and animation, ending in a \textbf{Quran app} capstone.}
+  %     \resumeItem{Widened a robotics-only academy into app development, laying the groundwork for the STEM programs that followed.}
+  %   \resumeItemListEnd
+
+  % [bench] first job, from /high-school/ (wording from resume-2025-02-14.pdf):
+  % \resumeSubheading
+  %   {Tennis Court Supervisor}{Summer 2021}
+  %   {South Orange County Tennis Academy}{Coto de Caza, CA}
+  %   \resumeItemListStart
+  %     \resumeItem{Supervised tennis courts every weekend, ensuring adherence to rules and maintaining optimal court conditions.}
+  %   \resumeItemListEnd
+
 \resumeSubHeadingListEnd
+
+% ------------------------------------------- [bench] Leadership & Activities --
+% \section{Leadership \& Activities}
+% \resumeSubHeadingListStart
+%
+%   \resumeSubheading
+%     {Co-Founder \& Vice President}{April 2025 -- Present}
+%     {Muslim Tech Collaborative (MTC), UCI Chapter}{Irvine, CA}
+%     \resumeItemListStart
+%       \resumeItem{Co-founded the UCI chapter and rose from VP of Workshops (2024--25) to VP of Projects (2025--26) to \textbf{Vice President} (2026--present).}
+%       \resumeItem{Founded \textbf{Ignite Consulting}, which puts students on real client projects with experienced mentors across \textbf{3 chapters} (UCI, UCR, CSUF).}
+%       \resumeItem{Wrote and taught workshops on \textbf{iOS development}, \textbf{LeetCode}, and \textbf{VibeCoding \& AI}, and coordinate teams building websites, tools, and apps for masjids, nonprofits, and Muslim-owned businesses.}
+%     \resumeItemListEnd
+%
+%   \resumeSubheading
+%     {Dawah Coordinator}{September 2026 -- Present}
+%     {Muslim Student Union (MSU), UC Irvine}{Irvine, CA}
+%     \resumeItemListStart
+%       \resumeItem{Run a weekly dawah booth on Ring Road and the Domino Process workshop.}
+%       \resumeItem{As Bros Social Coordinator (2025--26), co-planned and designed \textbf{16 brothers' events}, from Week 0 to the end-of-year banquet, and built the year-end awards deck.}
+%     \resumeItemListEnd
+%
+% \resumeSubHeadingListEnd
 
 % ------------------------------------------------------- Programming Projects --
 \section{Programming Projects}
 \resumeSubHeadingListStart
 
   \resumeProjectHeading
-    {\href{https://abubakrelmallah.com/star-wars/}{\textbf{Star Wars Discord Bots}} $|$ \emph{Python, C++20, Linux \hspace{0.75em} \textit{\textbf{500+ Servers}}}}{\href{https://github.com/TheAbubakrAbu/Sabacc-Droid}{\textbf{\emph{GitHub}}} $|$ 2024 -- 2025}
+    {\href{https://abubakrelmallah.com/star-wars/}{\textbf{Star Wars Discord Bots}} $|$ \emph{Python, C++20, Linux \hspace{0.75em} \textit{\textbf{500+ Servers}}}}{2024 -- 2025}
     \resumeItemListStart
       \resumeItem{Grew \href{https://discord.ly/sabaac-droid}{\textbf{Sabacc Droid}} (\textbf{Python}, \textbf{discord.py}, 5K+ lines) and \href{https://discord.ly/aurebesh-droid}{\textbf{Aurebesh Droid}} (\textbf{C++20}, \textbf{D++}, \textbf{CMake}) to \textbf{500+ Discord servers} with an event-driven, concurrent 8-player engine spanning 4 rule variants.}
       \resumeItem{Sustained \textbf{99.9\% uptime} on \textbf{Linux} with a \textbf{GitHub Actions} pipeline that builds and cuts a release on every push.}
     \resumeItemListEnd
 
   \resumeProjectHeading
-    {\href{https://abubakrelmallah.com/star-wars/}{\textbf{Datapad \& Aurebesh Translator}} $|$ \emph{SwiftUI, React, PWA + Android \hspace{0.75em} \textit{\textbf{Top 10 Entertainment}}}}{\href{https://github.com/TheAbubakrAbu/Datapad-Aurebesh-Translator}{\textbf{\emph{GitHub}}} $|$ 2023}
+    {\href{https://abubakrelmallah.com/star-wars/}{\textbf{Datapad \& Aurebesh Translator}} $|$ \emph{SwiftUI, React, PWA + Android \hspace{0.75em} \textit{\textbf{Top 10 Entertainment}}}}{2023}
     \resumeItemListStart
       \resumeItem{Published my first app at 17 and grew it into free and premium tiers earning \textbf{\$1K+} from \textbf{25K+ installs} at \textbf{99.9\% crash-free}, spanning iPhone, iPad, Mac, and Watch.}
       \resumeItem{Wrote a \textbf{1,400-line computer vision engine} decoding photographed glyphs with no trained model: adaptive thresholding, connected-component segmentation, and multi-signal template matching.}
@@ -182,13 +261,66 @@
     \resumeItemListEnd
 
   \resumeProjectHeading
-    {\href{https://abubakrelmallah.com/al-islam/}{\textbf{Al-Islam App Suite}} $|$ \emph{SwiftUI, Kotlin \hspace{0.75em} \textit{\textbf{Congressional \& Swift Student Challenge Winner}}}}{\href{https://github.com/TheAbubakrAbu/Al-Islam-iOS}{\textbf{\emph{GitHub}}} $|$ 2023}
+    {\href{https://abubakrelmallah.com/al-islam/}{\textbf{Al-Islam App Suite}} $|$ \emph{SwiftUI, Kotlin \hspace{0.75em} \textit{\textbf{Congressional \& Swift Student Challenge Winner}}}}{2023}
     \resumeItemListStart
-      \resumeItem{Built \textbf{three open-source apps} (\href{https://apps.apple.com/us/app/al-islam-islamic-pillars/id6449729655?platform=iphone}{\textbf{Al-Islam}}, \href{https://apps.apple.com/us/app/al-quran-beginner-quran/id6474894373?platform=iphone}{\textbf{Al-Quran}}, \href{https://apps.apple.com/us/app/al-adhan-prayer-times/id6475015493?platform=iphone}{\textbf{Al-Adhan}}) for iPhone, iPad, Mac, and Watch, serving \textbf{15K+ users} across \textbf{55K+ sessions} at \textbf{99.8\% crash-free}.}
+      \resumeItem{Built \textbf{three open-source apps} (\textbf{Al-Islam}, \textbf{Al-Quran}, \textbf{Al-Adhan}) for iPhone, iPad, Mac, and Watch, serving \textbf{15K+ users} across \textbf{55K+ sessions} at \textbf{99.8\% crash-free}.}
       \resumeItem{Cut load times \textbf{50\%} with offline \textbf{JSON} parsing, \textbf{SwiftSoup} scraping, and on-device caching, and maintain all three from one shared codebase with a \textbf{3-way-merge} sync tool that ports changes between them.}
     \resumeItemListEnd
 
+  % [bench] the rest of /projects/, newest first:
+  % \resumeProjectHeading
+  %   {\textbf{Quran Tajweed \& Hadith JSON Engines} $|$ \emph{Open source, 7 languages}}{\href{https://github.com/TheAbubakrAbu/Quran-Tajweed-Engine}{\textbf{\emph{GitHub}}} $|$ 2026}
+  %   \resumeItemListStart
+  %     \resumeItem{Encoded all \textbf{17 tajweed rules} across \textbf{6,236 ayahs} (113,611 spans) in one spec with reference ports in \textbf{7 languages} (Swift, Kotlin, Python, JavaScript, Go, Rust, Dart) kept in lockstep by CI; it powers Al-Quran's color-coded recitation.}
+  %     \resumeItem{Repaired \textbf{4,477 corrupted records} across \textbf{50,884 hadith} in 17 collections by proving each fix against a simulation of the scraper bug that broke it, then packed 79 MB of JSON into a 25 MB memory-mapped binary format.}
+  %   \resumeItemListEnd
+  %
+  % \resumeProjectHeading
+  %   {\href{https://apps.apple.com/us/app/academy-aurebesh-trainer/id6803067522}{\textbf{Academy: Aurebesh Trainer}} $|$ \emph{SwiftUI, React, Android}}{2026}
+  %   \resumeItemListStart
+  %     \resumeItem{Shipped a \textbf{4,800-line SwiftUI} trainer with read and write drills over \textbf{3,247 words}, a timed quiz, and XP ranks, back-deployed to \textbf{iOS 15}, plus a \textbf{React} port for web and Android.}
+  %   \resumeItemListEnd
+  %
+  % \resumeProjectHeading
+  %   {\textbf{OC Ummah} $|$ \emph{SwiftUI, MapKit, on-device AI}}{2026}
+  %   \resumeItemListStart
+  %     \resumeItem{Built a \textbf{~39K-line SwiftUI} community app with \textbf{zero third-party dependencies}: events merged from four calendar sources, a directory of \textbf{28 masjids}, a MapKit map, and on-device semantic search over Quran and hadith.}
+  %   \resumeItemListEnd
+  %
+  % \resumeProjectHeading
+  %   {\href{https://abubakrelmallah.com}{\textbf{abubakrelmallah.com}} $|$ \emph{Jekyll, JavaScript, PWA}}{\href{https://github.com/TheAbubakrAbu/Abubakr-Elmallah-Website}{\textbf{\emph{GitHub}}} $|$ 2026}
+  %   \resumeItemListStart
+  %     \resumeItem{Hand-built a \textbf{116-page} site with \textbf{zero npm dependencies} (\textbf{~45K lines of JavaScript}): every card written once as data, a \textbf{service worker} for full offline use, site-wide search, and an AVIF photo pipeline in \textbf{Python}.}
+  %   \resumeItemListEnd
+  %
+  % \resumeProjectHeading
+  %   {\textbf{Islamic Center of Irvine App} $|$ \emph{SwiftUI}}{\href{https://github.com/TheAbubakrAbu/Islamic-Center-of-Irvine}{\textbf{\emph{GitHub}}} $|$ 2023 -- 2026}
+  %   \resumeItemListStart
+  %     \resumeItem{Built and maintained the mosque's official iOS app for two and a half years (its own prayer schedule, events, Quran, local businesses), reaching \textbf{2K+ downloads} and \textbf{35K+ sessions}; earned ICOI's Certificate for App Development Achievement.}
+  %   \resumeItemListEnd
+  %
+  % \resumeProjectHeading
+  %   {\textbf{Periodic Table Explorer} $|$ \emph{Java}}{\href{https://github.com/TheAbubakrAbu/Periodic-Table-Explorer}{\textbf{\emph{GitHub}}} $|$ 2023}
+  %   \resumeItemListStart
+  %     \resumeItem{Wrote a \textbf{1,273-line}, 7-class Java app for a chemistry teacher (search, filters, generated quizzes) as my IB Computer Science internal assessment, and scored 6/7 on the IB exam.}
+  %   \resumeItemListEnd
+  %
+  % [bench] the first ones (2021--22, all on /high-school/): Star Wars: Order 66 (Scratch,
+  % the first project entirely my own), then on Code.org in JavaScript the Star Wars Datapad,
+  % Games (Hangman, Wordle, Checkers), Periodic Table and Calculator. Before them, the
+  % instructor-led camps: two Minecraft mods (iD Tech, Java, 2016--17) and UCI APPcamp (2018).
+
 \resumeSubHeadingListEnd
+
+% ---------------------------------------------------- [bench] Honors & Awards --
+% \section{Honors \& Awards}
+% \begin{itemize}[leftmargin=0.15in, label={}]
+%   \small{\item{
+%     \textbf{Apple Swift Student Challenge Winner} (2024): 1 of 350 worldwide, for Al-Quran; attended WWDC24 at Apple Park \\
+%     \textbf{Congressional App Challenge Winner} (2023): Best Original App Idea, for Al-Islam; Certificate of Congressional Recognition \\
+%     \textbf{High school:} AP Scholar with Distinction, Career Technical Education Award (computer science), ICOI Certificate for App Development Achievement, IB Knowledgeable Award, IB Best Performance at Banquet, First Place on the OC ACS first-year chemistry exam, Perfect Attendance (7th--11th grade), OC Register Valedictorians \& Top Scholars
+%   }}
+% \end{itemize}
 
 % ------------------------------------------------------ Languages & Technologies --
 \section{Languages \& Technologies}
@@ -197,7 +329,65 @@
     \textbf{Languages:} TypeScript, JavaScript, Python, SQL, Java, C++ (C++20), Swift, Kotlin, Bash \\
     \textbf{Frameworks:} React, Next.js, Node.js, tRPC, REST APIs, Drizzle ORM, Tailwind CSS, SwiftUI, UIKit \\
     \textbf{Tools:} AWS (Lambda, RDS, DynamoDB), Docker, PostgreSQL, Git, GitHub Actions (CI/CD), Linux, Testcontainers, Agile/Scrum
+    % [bench] the website's Languages line, which has had C since 2026-10-03:
+    % \textbf{Languages:} TypeScript, JavaScript, Python, SQL, Java, C, C++ (C++20), Swift, Kotlin, Bash \\
   }}
 \end{itemize}
+% [bench] everything on /work/'s Skills & Tools (the site's _data/skills.yml),
+% to swap in line by line:
+%   \textbf{Languages:} TypeScript, JavaScript, Python, SQL, Java, C, C++ (C++20), Swift, Kotlin, Bash, Go, Rust, Dart, Objective-C (reading), HTML/CSS \\
+%   \textbf{Apple:} SwiftUI, UIKit, Swift Concurrency, Combine, WidgetKit, StoreKit, MapKit, Core Location, AVFoundation, WatchConnectivity \\
+%   \textbf{Web \& Backend:} React, Next.js, Node.js, tRPC, REST APIs, Drizzle ORM, Zustand, Tailwind CSS, shadcn/ui, Capacitor, PWAs, discord.py, D++ \\
+%   \textbf{Cloud \& Tools:} AWS (Lambda, RDS, DynamoDB), PostgreSQL, Docker, Testcontainers, Firebase, Xcode, App Store Connect, TestFlight, Instruments, CocoaPods, Swift Package Manager, Git, GitHub Actions (CI/CD), CMake, Linux \\
+%   \textbf{Practices:} Agile/Scrum, code review, hiring and technical interviews, automated testing, technical writing, mentoring, curriculum design \\
+%   \textbf{Spoken:} English, Arabic (Egyptian and Modern Standard) \\
+%   \textbf{CliftonStrengths:} Maximizer, Relator, Positivity, Communication, Adaptability
+
+% ============================================== [bench] Older wording, 2023-26 ==
+%  Lines from the dated PDFs in resumes/ that say something the page and the
+%  blocks above do not. Each is verbatim, with the file it came from. Numbers
+%  that newer lines replaced (1,000+ downloads, 100+ servers, \$300) stay in
+%  the old PDFs and are left out here.
+%
+%  UCI Student Center & Event Services
+%    \resumeItem{Launched UCI Esports 1.0 as sole iOS developer by integrating ggLeap REST APIs for live PC reservations, Google Calendar event feeds, UCINetID sign-in with guest mode, and backend profile sync.}   (2026-7-22)
+%    \resumeItem{Hit 87.8K installs / 3.19M sessions on ZOTFinder and 15.4K / 39.2K on UCI Now after SwiftUI remaster.}   (2025-07-02)
+%    \resumeItem{Integrate real-time campus data, location services, and APIs in collaboration with campus departments.}   (2025-03-31)
+%  ICSSC
+%    \resumeItem{Lead a 12-person engineering team on Agile two-week sprints building PeterPlate, owning code review and onboarding for 8 new developers.}   (costar-2026-09-19)
+%  STEM Heroes Academy
+%    \resumeItem{Taught 15+ custom lessons on Swift, guiding students through UI design and animation projects.}   (2025-07-02)
+%    \resumeItem{Boosted student engagement and retention by 40\% through hands-on projects, live demos, and feedback loops.}   (2025-07-02)
+%  Datapad and Aurebesh Translator
+%    \resumeItem{Enabled instant offline translation by engineering a modular engine rendering 14 galactic scripts.}   (2026-7-22)
+%    \resumeItem{Shipped 6 WidgetKit widgets, Metal shader effects, StoreKit in-app purchases, and a watchOS companion app.}   (2026-7-22)
+%    \resumeItem{Implemented an Aurebesh keyboard extension with the Keyboard API and WidgetKit Lock and Home Screen widgets, along with an Apple Watch app using WatchConnectivity for settings synchronization.}   (2025-02-14)
+%    \resumeItem{Released a free version, Aurebesh Translator, reaching 6,000+ users and achieving a 99.9\% crash-free rate.}   (2025-07-02)
+%  Al-Islam suite
+%    \resumeItem{Cut load times 50\% with an engine processing all 6,236 records on-device, replacing API calls with JSON parsing.}   (costar-2026-09-19)
+%    \resumeItem{Used Core Location and Adhan Package for accurate prayer times with background updates via AppDelegate.}   (2025-02-14)
+%    \resumeItem{Developed WidgetKit Lock/Home Screen widgets and an Apple Watch app with complications.}   (2025-02-14)
+%    \resumeItem{Added online Quran recitations with multiple reciters, supporting chapter and verse playback.}   (2025-02-14)
+%  Islamic Center of Irvine app
+%    \resumeItem{Integrated SwiftSoup for dynamic web scraping and used background tasks for efficient daily data sync.}   (2025-07-02)
+%    \resumeItem{Engineered a full-stack platform with mosque prayer alerts, Islamic tools, and a searchable Muslim business directory using App Groups, shared storage, and modular SwiftUI components to boost daily engagement.}   (2025-07-02)
+%  Discord bots
+%    \resumeItem{Used discord.py for command handling, event management, and UI components like buttons and embeds.}   (2025-02-14)
+%    \resumeItem{Implemented OOP game logic with classes for cards, decks, and players, ensuring modular code.}   (2025-02-14)
+%  High school roles (2024-03-29 to 2024-06-28)
+%    Muslim Student Association: Secretary (10th), President (11th--12th). "Organized and facilitated weekly Friday meetings, leading most of them and running the communication channels."
+%    STEM Extreme Club, Director of STEM Workshops (2021--22): "Led all workshops and other tutors and members of STEM Extreme, both online and in person."
+%    Cyber Patriot, Co-President (2023--24). ICOI Technology Committee, Board Member (2023--). Tennis: JV (9th), Varsity (10th--11th).
+%  Volunteering
+%    "Accumulated over 70 hours of volunteering throughout high school. Active as an NHS (National Honor Society) and CSF (California Scholarship Federation) member." (2023-06-03; later files say over 80)
+%    "I have also led my own volunteering projects for these clubs, mainly my Ramadan mosque event where I organized a team of 10 to volunteer at the mosque." (2023-06-03)
+%  Education
+%    "IB Diploma Student - 5.13 GPA, Graduated Top 3 out of 644" (2024-06-28 to 2025-02-06; the transcript's 1st decile of 640 is also right)
+%    Saddleback College dual enrollment, 4.0 GPA (2022--2024)
+%    Exams: AP Computer Science A 5, AP Computer Science Principles 5, AP Statistics 5, AP Psychology 5, AP Human Geography 4, AP European History 4, IB Computer Science SL 6, IB Math AA SL 7 (2024-03-29)
+%  Other
+%    "Perfect attendance from 7th grade through 11th grade, other than tennis match bus days and one sick day." (2023-06-03, reworded)
+%    "Fast typer with a speed of 153 words per minute." (2023-06-03; the site's best is 179 WPM, 12th grade)
+
 
 \end{document}
